@@ -38,6 +38,7 @@ button, .button, select {
   text-align: center;
   margin: 5px;
   width: calc(100% - 10px);
+  font-size: 1rem;
 }
 
 ul {
