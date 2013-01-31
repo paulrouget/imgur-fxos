@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
-<!-- 
-    <html manifest="manifest.appcache">
- -->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" cntent="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/layout.css"/>
     <link rel="stylesheet" type="text/css" href="css/base.css"/>
-
     <title>imgur</title>
 </head>
 
@@ -17,7 +13,6 @@
     <header>
         <h1><a href="#main">imgur</a></h1> 
         <div id="install"><button>Install</button></div>
-        <div id="online-status" title="Online"></div>
     </header>
 
     <section id="pane-main">
@@ -28,7 +23,7 @@
     <section id="pane-browse">
       <select id="select-subreddit">
         <option value="comics">comics</option>
-        <option value="pics">gif</option>
+        <option value="pics">pics</option>
         <option value="gifs">gifs</option>
         <option value="aww">aww</option>
       </select> 
@@ -36,14 +31,15 @@
     </section>
 
     <section id="pane-upload">
-      <button>import</button>
-      <button>camera</button>
+      <button onclick="panes.upload.import()">import</button>
+      <button onclick="panes.upload.camera()">camera</button>
+    </section>
+
+    <section id="pane-image">
+      <button>share</button>
+      <img id="preview">
     </section>
 
     <script src="js/UI.js"></script>
-    <script src="js/base.js"></script>
-    <script src="js/webapp.js"></script>
-    <script src="js/offline.js"></script>
-
 </body>
 </html>

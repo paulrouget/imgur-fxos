@@ -2,23 +2,14 @@ body {
     margin: 0;
 }
 
-#pane-main,
-#pane-browse,
-#pane-upload {
+body > section {
   display: none;
 }
 
-body[data-pane="main"] > #pane-main {
-  display: block;
-}
-
-body[data-pane="browse"] > #pane-browse {
-  display: block;
-}
-
-body[data-pane="upload"] > #pane-upload {
-  display: block;
-}
+body[data-pane="main"]   > #pane-main   { display: block; }
+body[data-pane="browse"] > #pane-browse { display: block; }
+body[data-pane="upload"] > #pane-upload { display: block; }
+body[data-pane="image"]  > #pane-image  { display: block; }
 
 header {
   height: 4rem;
