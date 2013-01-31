@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+#pane-main,
+#pane-browse,
+#pane-upload {
+  display: none;
+}
+
+body[pane="main"] > #pane-main {
+  display: block;
+}
+
+body[pane="browse"] > #pane-browse {
+  display: block;
+}
+
+body[pane="upload"] > #pane-upload {
+  display: block;
+}
+
+#install {
+    display: none;
+}
+
+.show-install > h1 {
+    display: inline-block;
+}
+
+#online-status {
+    position: absolute;
+    left: 10px;
+    top: 2rem;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+    background: #008000;
+    border-radius: 5px;
+}
+
+#online-status.offline {
+    background: #ff0000;
+}

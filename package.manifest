@@ -1,6 +1,6 @@
 {
-    "name": "Shoot And Share",
-    "package_path" : "http://paulrouget.com/shoot-and-share-fxos/install.zip",
+    "name": "imgur",
+    "package_path" : "http://paulrouget.com/imgur-fxos/install.zip",
     "version": "1",
     "developer": {
         "name": "Paul Rouget",
