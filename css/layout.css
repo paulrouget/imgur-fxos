@@ -20,6 +20,19 @@ body[pane="upload"] > #pane-upload {
   display: block;
 }
 
+header {
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+}
+
+body {
+  padding-top: 3rem;
+}
+
 #install {
     display: none;
 }
