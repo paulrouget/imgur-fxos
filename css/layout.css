@@ -8,20 +8,20 @@ body {
   display: none;
 }
 
-body[pane="main"] > #pane-main {
+body[data-pane="main"] > #pane-main {
   display: block;
 }
 
-body[pane="browse"] > #pane-browse {
+body[data-pane="browse"] > #pane-browse {
   display: block;
 }
 
-body[pane="upload"] > #pane-upload {
+body[data-pane="upload"] > #pane-upload {
   display: block;
 }
 
 header {
-  height: 3rem;
+  height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,8 +29,12 @@ header {
   background: red;
 }
 
+header > * {
+  display: inline-block;
+}
+
 body {
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 #install {
@@ -42,7 +46,6 @@ body {
 }
 
 #online-status {
-    position: absolute;
     left: 10px;
     top: 2rem;
     width: 10px;

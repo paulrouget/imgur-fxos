@@ -8,20 +8,21 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/layout.css"/>
     <link rel="stylesheet" type="text/css" href="css/base.css"/>
-    <title>Shoot And Share</title>
+
+    <title>imgur</title>
 </head>
 
-<body>
+<body data-pane="main">
 
     <header>
-        <h1>imgur</h1> 
+        <h1><a href="#main">imgur</a></h1> 
         <div id="install"><button>Install</button></div>
         <div id="online-status" title="Online"></div>
     </header>
 
     <section id="pane-main">
-      <button onclick="UI.showBrowsePane()">Browse</button>
-      <button onclick="UI.showUploadPane()">Upload</button>
+      <a href="#browse">browse</a>
+      <a href="#upload">upload</a>
     </section>
 
     <section id="pane-browse">
@@ -39,6 +40,7 @@
       <button>camera</button>
     </section>
 
+    <script src="js/UI.js"></script>
     <script src="js/base.js"></script>
     <script src="js/webapp.js"></script>
     <script src="js/offline.js"></script>
