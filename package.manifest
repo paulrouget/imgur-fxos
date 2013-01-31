@@ -1,0 +1,9 @@
+{
+    "name": "Shoot And Share",
+    "package_path" : "http://paulrouget.com/shoot-and-share-fxos/install.zip",
+    "version": "1",
+    "developer": {
+        "name": "Paul Rouget",
+        "url": "http://paulrouget.com"
+    }
+}
