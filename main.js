@@ -28,30 +28,25 @@ panes.upload.import = function() {
 }
 
 panes.upload.camera = function() {
-  var record = document.querySelector("#record");
-  if (record) { 
-    record.onclick = function () {
-      var rec = new MozActivity({
-        name: "record" // Possibly capture in future versions
-      });
+  var rec = new MozActivity({
+    name: "record" // Possibly capture in future versions
+  });
 
-      rec.onsuccess = function () { 
-        var img = document.querySelector("#preview");
-        img.src = window.URL.createObjectURL(this.result.blob);
-        img.onload = function() {
-          var canvas = document.querySelector("canvas");
-          canvas.width = img.width;
-          canvas.height = img.height;
-          canvas.getContext("2d").drawImage(img, 0, 0);
-        }
-        window.location.hash = "#image";
-      };
-
-      rec.onerror = function () { 
-        alert("No taken picture returned");
-      };
+  rec.onsuccess = function () { 
+    var img = document.querySelector("#preview");
+    img.src = window.URL.createObjectURL(this.result.blob);
+    img.onload = function() {
+      var canvas = document.querySelector("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+      canvas.getContext("2d").drawImage(img, 0, 0);
     }
-  }
+    window.location.hash = "#image";
+  };
+
+  rec.onerror = function () { 
+    alert("No taken picture returned");
+  };
 }
 
 panes.image.filter = function() {
