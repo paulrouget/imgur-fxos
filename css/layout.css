@@ -12,27 +12,21 @@ body[data-pane="upload"] > #pane-upload { display: block; }
 body[data-pane="image"]  > #pane-image  { display: block; }
 
 header {
-  height: 4rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: red;
 }
 
-header > * {
-  display: inline-block;
-}
-
-body {
-  padding-top: 4rem;
+header > h1 {
+  margin: 0;
 }
 
 #install {
     display: none;
 }
 
-.show-install > h1 {
+#install.show-install {
     display: inline-block;
 }
 
@@ -48,4 +42,8 @@ body {
 
 #online-status.offline {
     background: #ff0000;
+}
+
+#preview {
+  display: none;
 }

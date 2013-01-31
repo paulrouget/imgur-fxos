@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" cntent="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/layout.css"/>
-    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/pixels.css"/>
     <title>imgur</title>
 </head>
 
@@ -12,12 +12,12 @@
 
     <header>
         <h1><a href="#main">imgur</a></h1> 
-        <div id="install"><button>Install</button></div>
     </header>
 
     <section id="pane-main">
-      <a href="#browse">browse</a>
-      <a href="#upload">upload</a>
+      <a href="#browse" class="button">browse</a>
+      <a href="#upload" class="button">upload</a>
+      <button id="install">Install</button></div>
     </section>
 
     <section id="pane-browse">
@@ -36,10 +36,12 @@
     </section>
 
     <section id="pane-image">
-      <button>share</button>
+      <button onclick="panes.image.upload()">upload</button>
+      <button onclick="panes.image.filter()">filter</button>
       <img id="preview">
+      <canvas></canvas>
     </section>
 
-    <script src="js/UI.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
